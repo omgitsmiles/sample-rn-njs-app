@@ -29,6 +29,7 @@ app.get('/:id', (req, res) => {
 app.post('/', (req, res) => {
     const article = req.body;
     articles.push(article);
+    console.log(articles);
     res.send('Article added successfully');
     })
 
